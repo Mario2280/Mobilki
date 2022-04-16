@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Tranty</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="next">Дальше</string>
+    <string name="already_starting">Скорее начинаем</string>
+    <string name="onboarding_description_delete">Мы желаем чтобы Вы получили бла-бла, Анджелину Джоли мы желаем, и вообще нахуй идите</string>
+    <string name="app_crashed">App crashed</string>
+
+    <!-- menu -->
+    <string name="menu_my_level">Мой Уровень</string>
+    <string name="menu_my_orders">Мои Заказы</string>
+    <string name="menu_my_preferences">Предпочтения</string>
+    <string name="menu_my_settings">Настройки</string>
+
+    <!-- sign in -->
+    <string name="send_code_again">Отправить код повторно</string>
+    <string name="change_phone_number">Изменить номер телефона</string>
+    <string name="please_enter_code">Пожалуйста введите 4-х значный код</string>
+    <string name="terms_of_use_agree">Я прочитал и принимаю\nпользовательское соглашение</string>
+    <string name="apply">Принять</string>
+    <string name="enter_your_name">Введите Ваше имя</string>
+    <string name="specify_age">Укажите Ваш Возраст:</string>
+    <string name="phone_code_belarus">+375</string>
+    <string name="send_code">Отправить код</string>
+    <string name="code_was_sent">Код отравлен на номер\n%s</string>
+    <string name="open_bracket">(</string>
+    <string name="close_bracket">)</string>
+    <string name="menu_catalog">Каталог</string>
+    <string name="menu_favorites">Избранное</string>
+    <string name="menu_near_you">Рядом</string>
+    <string name="menu_profile">Профиль</string>
+    <string name="catalog_popular">Популярное</string>
+
+</resources>

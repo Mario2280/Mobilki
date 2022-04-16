@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/vTvCodeWasSendOnNumber"
+        style="@style/StandardText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/code_was_sent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/vChangePhoneNumber"
+        style="@style/LinkText"
+        android:layout_gravity="center"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="@string/change_phone_number" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/StandardText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/please_enter_code" />
+
+    <com.david.laba.ui.custom.SeparateEditText
+        android:id="@+id/vCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:count="4" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/vSendCodeAgain"
+        style="@style/LinkText"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_gravity="center"
+        android:text="@string/send_code_again" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80" />
+</LinearLayout>

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Tranty</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="next">Next</string>
+    <string name="already_starting">Starting</string>
+    <string name="onboarding_description_delete">Мы желаем чтобы Вы получили бла-бла, Анджелину Джоли мы желаем, и вообще нахуй идите</string>
+    <string name="app_crashed">App crashed</string>
+
+    <!-- menu -->
+    <string name="menu_my_level">My level</string>
+    <string name="menu_my_orders">My orders</string>
+    <string name="menu_my_preferences">Preferences</string>
+    <string name="menu_my_settings">Settings</string>
+
+    <!-- sign in -->
+    <string name="send_code_again">Resend code</string>
+    <string name="change_phone_number">Change phone number</string>
+    <string name="please_enter_code">Please input 4-digits number</string>
+    <string name="terms_of_use_agree">I have read and accept Terms of agreement</string>
+    <string name="apply">Accept</string>
+    <string name="enter_your_name">Input your name</string>
+    <string name="specify_age">Age:</string>
+    <string name="phone_code_belarus">+375</string>
+    <string name="send_code">Send code</string>
+    <string name="code_was_sent">Code was send\n%s</string>
+    <string name="open_bracket">(</string>
+    <string name="close_bracket">)</string>
+    <string name="menu_catalog">Catalog</string>
+    <string name="menu_favorites">Favorites</string>
+    <string name="menu_near_you">Nearby</string>
+    <string name="menu_profile">Profile</string>
+    <string name="catalog_popular">Popular</string>
+    <string name="menu_entities">Entities</string>
+    <string name="menu_maps">Maps</string>
+    <string name="menu_settings">Settings</string>
+
+</resources>

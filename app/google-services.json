@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "762827130791",
+    "project_id": "tranty",
+    "storage_bucket": "tranty.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762827130791:android:6e1c7289a9e3a4557ad882",
+        "android_client_info": {
+          "package_name": "com.ella.tranty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762827130791-dgn7a58sddutfg8th3i0g7glpj93ba6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCamRpoIoRMhS1Gz1PQpZu8a9tnY9osyHs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "762827130791-dgn7a58sddutfg8th3i0g7glpj93ba6p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

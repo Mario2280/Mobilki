@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/catalogPage"
+        android:enabled="true"
+        android:icon="@drawable/ic_delete_list"
+        android:title="@string/menu_entities" />
+    <item
+        android:id="@+id/mapsPage"
+        android:enabled="true"
+        android:icon="@drawable/ic_delete_maps"
+        android:title="@string/menu_maps" />
+
+    <item
+        android:id="@+id/profilePage"
+        android:enabled="true"
+        android:icon="@drawable/ic_delete_profile"
+        android:title="@string/menu_settings" />
+</menu>

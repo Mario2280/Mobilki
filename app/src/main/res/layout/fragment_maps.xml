@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.screens.main.maps.MapsFragment">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/vGoogleMapsFragmentContainer"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <include
+        android:id="@+id/inclWeatherInfo"
+        layout="@layout/view_facility_glimpse"
+        android:visibility="gone" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/vBtnFacilityPrev"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:elevation="2dp"
+        android:focusable="true"
+        android:src="@drawable/ic_arrow_prev_delete"
+        android:visibility="gone" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/vBtnFacilityNext"
+        android:layout_width="128dp"
+        android:layout_height="64dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:elevation="2dp"
+        android:focusable="true"
+        android:src="@drawable/ic_arrow_next_delete"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,115 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+
+android {
+    compileSdk 30
+
+    defaultConfig {
+        applicationId "com.ella.tranty"
+        minSdk 23
+        targetSdk 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    def firebaseCrashVersion = "18.2.4"
+    implementation "com.google.firebase:firebase-crashlytics:$firebaseCrashVersion"
+
+    def firebaseAnalyticsVersion = "20.0.0"
+    implementation "com.google.firebase:firebase-analytics:$firebaseAnalyticsVersion"
+
+    def room_version = "2.3.0"
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-rxjava3:$room_version"
+
+
+    def fragmentVersion = "1.3.0"
+    implementation "androidx.fragment:fragment-ktx:$fragmentVersion"
+
+    def activityVersion = "1.3.0"
+    implementation "androidx.activity:activity-ktx:$activityVersion"
+
+    def lifecycleVersion = "2.2.0"
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycleVersion"
+
+    def fragNavVersion = "3.2.0"
+    implementation "com.ncapdevi:frag-nav:$fragNavVersion"
+
+    def circleImageVersion = "3.1.0"
+    implementation "de.hdodenhof:circleimageview:$circleImageVersion"
+
+    def rxJava = '3.1.2'
+    implementation "io.reactivex.rxjava3:rxjava:$rxJava"
+    def rxJavaAndroid = "3.0.0"
+    implementation "io.reactivex.rxjava3:rxandroid:$rxJavaAndroid"
+
+    def retrofitVersion = "2.9.0"
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava3:$retrofitVersion"
+
+    def gsonVersion = "2.8.8"
+    implementation "com.google.code.gson:gson:$gsonVersion"
+
+    def kodeinVersion = '7.8.0'
+    implementation "org.kodein.di:kodein-di:$kodeinVersion"
+
+    def viewBindingDelegateVersion = "1.5.0-beta01"
+    implementation "com.github.kirich1409:viewbindingpropertydelegate-noreflection:$viewBindingDelegateVersion"
+
+    def lifecycle_version = '2.3.1'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+
+    def glideVersion = "4.12.0"
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    kapt "com.github.bumptech.glide:compiler:$glideVersion"
+
+    def circleIndicatorVersion = "2.1.6"
+    implementation "me.relex:circleindicator:$circleIndicatorVersion"
+
+    def mapsVersion = "17.0.1"
+    implementation "com.google.android.gms:play-services-maps:$mapsVersion"
+
+    def workVersion = "2.6.0"
+    implementation "androidx.work:work-runtime-ktx:$workVersion"
+
+    def flexboxLayoutVersion = "3.0.0"
+    implementation "com.google.android.flexbox:flexbox:$flexboxLayoutVersion"
+}

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:weightSum="100">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/vTvCountryCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:lines="1"
+            android:text="@string/phone_code_belarus"
+            android:textAlignment="center"
+            android:textSize="32sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:lines="1"
+            android:text="@string/open_bracket"
+            android:textAlignment="center"
+            android:textSize="32sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/vEtOperatorCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="35"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="2"
+            android:textAlignment="center"
+            android:textColor="@color/Gray"
+            android:textSize="32sp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:lines="1"
+            android:text="@string/close_bracket"
+            android:textAlignment="center"
+            android:textSize="32sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/vEtNumber"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="55"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="7"
+            android:textAlignment="center"
+            android:textColor="@color/Gray"
+            android:textSize="32sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80"
+        tools:ignore="UselessLeaf" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/vBtnSendCode"
+        style="@style/ButtonSignUp"
+        android:background="@drawable/selector_gray_red"
+        android:enabled="false"
+        android:text="@string/send_code" />
+
+</LinearLayout>
